@@ -1,1 +1,1 @@
-# DFT-QE
+# SSP-QE
