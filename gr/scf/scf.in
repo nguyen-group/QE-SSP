@@ -1,10 +1,10 @@
-& CONTROL
+&CONTROL
 calculation = 'scf'
 pseudo_dir  = '../pseudo/'
 outdir      = '../tmp/'
 prefix      = 'gr'
 /
-& SYSTEM
+&SYSTEM
 ibrav       = 4
 a           = 2.4623
 c           = 10.0
@@ -15,7 +15,7 @@ smearing    = 'm-p'
 degauss     = 0.02
 ecutwfc     = 60
 /
-& ELECTRONS
+&ELECTRONS
 mixing_beta = 0.7
 /
 ATOMIC_SPECIES
