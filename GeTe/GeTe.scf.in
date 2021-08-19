@@ -1,0 +1,31 @@
+&CONTROL
+  calculation      = 'scf'
+  outdir           = './out/'
+  prefix           = 'GeTe'
+  pseudo_dir       = './pseudo/'
+  verbosity        = 'high'
+/
+&SYSTEM
+  ecutrho          = 3.2000000000d+02
+  ecutwfc          = 4.0000000000d+01
+  ibrav            = 0
+  nat              = 2
+  ntyp             = 2
+/
+&ELECTRONS
+  conv_thr         = 4.0000000000d-10
+  electron_maxstep = 80
+  mixing_beta      = 4.0000000000d-01
+/
+ATOMIC_SPECIES
+Ge 72.64 ge_pbesol_v1.4.uspp.F.UPF
+Te 127.6 te_pbesol_v1.uspp.F.UPF
+ATOMIC_POSITIONS crystal
+Ge  0.0000000000   0.0000000000   0.0000000000 
+Te  0.5000000000   0.5000000000   0.5000000000 
+CELL_PARAMETERS angstrom
+    4.2603675143   0.0000000000   0.0000000000
+    2.1301837572   3.6895864968   0.0000000000
+    2.1301837572   1.2298621656   3.4785755089
+K_POINTS automatic
+13 13 13 1 1 1

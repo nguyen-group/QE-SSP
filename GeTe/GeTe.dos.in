@@ -1,0 +1,7 @@
+&DOS
+ outdir   = './out/'
+ prefix   = 'GeTe'
+ fildos   = 'GeTe.dos'
+ emin     = -5
+ emax     = 25
+/

@@ -1,0 +1,47 @@
+
+     Program DOS v.6.7MaX starts on 13Aug2021 at 11:25:15 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     8 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       8
+
+     Reading xml data from directory:
+
+     ./out/GeTe.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBESOL
+                           (   1   4  10   8   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         177      90     29                 4453     1578     284
+     Max         178      91     30                 4457     1579     285
+     Sum        1417     721    235                35629    12627    2277
+ 
+
+     Optimized tetrahedron method used
+
+     [opt_tetra]  Optimized tetrahedron method is used.
+ 
+     DOS          :  31m25.86s CPU  47m 8.14s WALL
+
+ 
+   This run was terminated on:  12:12:23  13Aug2021            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
