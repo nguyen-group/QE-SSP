@@ -1,0 +1,12 @@
+&INPUT
+asr      = 'crystal'
+flfrc    = 'gr.fc'
+flfrq    = 'gr.freq'
+flvec    = 'gr.modes'
+loto_2d  = .true.
+fldos    = 'gr.dos'
+dos      = .true.
+nk1      = 48
+nk2      = 48
+nk3      = 1
+/

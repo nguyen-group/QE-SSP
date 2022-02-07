@@ -1,0 +1,33 @@
+&CONTROL
+calculation   = 'bands'
+pseudo_dir    = '../pseudo/'
+outdir        = '../tmp/'
+prefix        = 'gr'
+/
+&SYSTEM
+ibrav         = 4
+a             = 2.4639055825
+c             = 15.0
+nat           = 2
+ntyp          = 1
+nbnd          = 16
+occupations   = 'smearing'
+smearing      = 'mv'
+degauss       = 0.020
+ecutwfc       = 40
+/
+&ELECTRONS
+mixing_beta   = 0.7
+conv_thr      = 1.0D-6
+/
+ATOMIC_SPECIES
+C 12.0107 C.pbe-n-rrkjus_psl.0.1.UPF
+ATOMIC_POSITIONS (crystal)
+C  0.333333333  0.666666666  0.500000000
+C  0.666666666  0.333333333  0.500000000
+K_POINTS (crystal_b)
+4
+gG 40
+K  20
+M  30
+gG 0

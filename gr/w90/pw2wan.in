@@ -1,0 +1,6 @@
+&INPUTPP
+outdir    = '../tmp/'
+prefix    = 'gr_open'
+seedname  = 'gr'
+write_unk = .true.
+/

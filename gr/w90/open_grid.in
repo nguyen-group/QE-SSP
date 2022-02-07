@@ -1,0 +1,4 @@
+&INPUTPP
+outdir        = '../tmp/'
+prefix        = 'gr'
+/

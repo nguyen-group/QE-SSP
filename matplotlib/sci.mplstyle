@@ -1,0 +1,55 @@
+# Figure properties
+figure.figsize     : 6.5, 5
+
+# Font properties
+font.family        : Arial
+font.size          : 22
+
+#### LaTeX
+mathtext.default   : regular
+
+# Axes properties
+axes.titlesize     : medium  # fontsize of the axes title
+axes.titlepad      : 10      # pad between axes and title in points
+axes.titleweight   : normal  # font weight for axes title
+axes.linewidth     : 2       # edge linewidth
+axes.labelpad      : 10      # space between label and axis
+axes.prop_cycle    : cycler(color=['1f77b4', 'd62728', '2ca02c', 'ff7f0e', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
+
+# Tick properties
+# x-axis
+xtick.top          : True
+xtick.direction    : in
+xtick.major.size   : 9
+xtick.major.width  : 2
+xtick.major.pad    : 4
+xtick.minor.visible: True
+xtick.minor.size   : 6
+xtick.minor.width  : 2
+xtick.minor.pad    : 4
+
+# y-axis
+ytick.right        : True
+ytick.direction    : in
+ytick.major.size   : 9
+ytick.major.width  : 2
+ytick.major.pad    : 4
+ytick.minor.visible: True
+ytick.minor.size   : 6
+ytick.minor.width  : 2
+ytick.minor.pad    : 4
+
+# Line properties
+lines.linewidth    : 2
+lines.markersize   : 10
+
+# Legend properties
+legend.framealpha  : 1
+legend.frameon     : False
+legend.fontsize    : 19
+
+# Increase the default DPI, and change the file type from png to pdf 
+savefig.dpi        : 600      # figure dots per inch
+savefig.format     : pdf      # png, ps, pdf, svg
+savefig.bbox       : tight    # {tight, standard}
+savefig.transparent: True     # transparent background

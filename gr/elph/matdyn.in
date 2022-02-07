@@ -1,0 +1,13 @@
+&INPUT
+asr            = 'simple'
+flfrc          = 'gr.fc'
+flfrq          = 'gr.freq'
+flvec          = 'gr.modes'
+la2F           = .true.
+q_in_band_form = .true.
+/
+4
+gG 40
+K  20
+M  30
+gG 0

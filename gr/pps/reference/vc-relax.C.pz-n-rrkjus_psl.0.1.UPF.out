@@ -1,0 +1,1836 @@
+
+     Program PWSCF v.7.0 starts on  1Feb2022 at  0:35:16 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     4 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       4
+     251211 MiB available memory on the printing compute node when the environment starts
+ 
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         118     118     37                12812    12812    2155
+     Max         119     119     38                12835    12835    2162
+     Sum         475     475    151                51311    51311    8639
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.6561  a.u.
+     unit-cell volume          =     532.1899 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =         8.00
+     number of Kohn-Sham states=            8
+     kinetic-energy cutoff     =      80.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     scf convergence threshold =      1.0E-09
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     energy convergence thresh.=      1.0E-05
+     force convergence thresh. =      1.0E-04
+     press convergence thresh. =      5.0E-02
+     Exchange-correlation= LDA
+                           (   1   1   0   0   0   0   0)
+     nstep                     =           50
+
+
+     celldm(1)=   4.656107  celldm(2)=   0.000000  celldm(3)=   6.087896
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   6.087896 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.164260 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/C.pz-n-rrkjus_psl.0.1.UPF
+     MD5 check sum: a3cecbabebb5b3a1aff122f23eb09bb0
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated using "atomic" code by A. Dal Corso  v.5.0.2 svn rev. 9415
+     Using radial grid of 1073 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+
+     24 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.0000000   0.5773503   3.0439478  )
+         2           C   tau(   2) = (   0.5000000   0.2886751   3.0439478  )
+
+     number of k points=    19  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0138889
+        k(    2) = (   0.0000000   0.0962250   0.0000000), wk =   0.0833333
+        k(    3) = (   0.0000000   0.1924501   0.0000000), wk =   0.0833333
+        k(    4) = (   0.0000000   0.2886751   0.0000000), wk =   0.0833333
+        k(    5) = (   0.0000000   0.3849002   0.0000000), wk =   0.0833333
+        k(    6) = (   0.0000000   0.4811252   0.0000000), wk =   0.0833333
+        k(    7) = (   0.0000000  -0.5773503   0.0000000), wk =   0.0416667
+        k(    8) = (   0.0833333   0.1443376   0.0000000), wk =   0.0833333
+        k(    9) = (   0.0833333   0.2405626   0.0000000), wk =   0.1666667
+        k(   10) = (   0.0833333   0.3367877   0.0000000), wk =   0.1666667
+        k(   11) = (   0.0833333   0.4330127   0.0000000), wk =   0.1666667
+        k(   12) = (   0.0833333   0.5292377   0.0000000), wk =   0.1666667
+        k(   13) = (   0.1666667   0.2886751   0.0000000), wk =   0.0833333
+        k(   14) = (   0.1666667   0.3849002   0.0000000), wk =   0.1666667
+        k(   15) = (   0.1666667   0.4811252   0.0000000), wk =   0.1666667
+        k(   16) = (   0.1666667   0.5773503   0.0000000), wk =   0.0833333
+        k(   17) = (   0.2500000   0.4330127   0.0000000), wk =   0.0833333
+        k(   18) = (   0.2500000   0.5292377   0.0000000), wk =   0.1666667
+        k(   19) = (   0.3333333   0.5773503   0.0000000), wk =   0.0277778
+
+     Dense  grid:    51311 G-vectors     FFT dimensions: (  27,  27, 162)
+
+     Estimated max dynamical RAM per process >      22.31 MB
+
+     Estimated total dynamical RAM >      89.24 MB
+
+     Check: negative core charge=   -0.000001
+
+     Initial potential from superposition of free atoms
+
+     starting charge       7.9999, renormalised to       8.0000
+
+     negative rho (up, down):  5.357E-05 0.000E+00
+     Starting wfcs are    8 randomized atomic wfcs
+
+     total cpu time spent up to now is        0.5 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  8.5
+
+     total cpu time spent up to now is        1.0 secs
+
+     total energy              =     -23.89413107 Ry
+     estimated scf accuracy    <       0.13940053 Ry
+
+     iteration #  2     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.74E-03,  avg # of iterations =  4.4
+
+     negative rho (up, down):  3.841E-08 0.000E+00
+
+     total cpu time spent up to now is        1.4 secs
+
+     total energy              =     -23.92073976 Ry
+     estimated scf accuracy    <       0.00804853 Ry
+
+     iteration #  3     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     ethr =  1.01E-04,  avg # of iterations = 14.9
+
+     negative rho (up, down):  7.889E-07 0.000E+00
+
+     total cpu time spent up to now is        2.2 secs
+
+     total energy              =     -23.92960738 Ry
+     estimated scf accuracy    <       0.00187335 Ry
+
+     iteration #  4     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.34E-05,  avg # of iterations =  8.3
+
+     negative rho (up, down):  3.127E-05 0.000E+00
+
+     total cpu time spent up to now is        2.6 secs
+
+     total energy              =     -23.93028818 Ry
+     estimated scf accuracy    <       0.00018761 Ry
+
+     iteration #  5     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.35E-06,  avg # of iterations =  8.4
+
+     negative rho (up, down):  2.397E-05 0.000E+00
+
+     total cpu time spent up to now is        3.1 secs
+
+     total energy              =     -23.93035558 Ry
+     estimated scf accuracy    <       0.00001935 Ry
+
+     iteration #  6     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.42E-07,  avg # of iterations =  4.2
+
+     negative rho (up, down):  2.641E-05 0.000E+00
+
+     total cpu time spent up to now is        3.5 secs
+
+     total energy              =     -23.93037035 Ry
+     estimated scf accuracy    <       0.00000023 Ry
+
+     iteration #  7     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.89E-09,  avg # of iterations =  5.2
+
+     negative rho (up, down):  2.637E-05 0.000E+00
+
+     total cpu time spent up to now is        3.9 secs
+
+     total energy              =     -23.93037109 Ry
+     estimated scf accuracy    <       0.00000008 Ry
+
+     iteration #  8     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  9.86E-10,  avg # of iterations =  2.2
+
+     negative rho (up, down):  2.656E-05 0.000E+00
+
+     total cpu time spent up to now is        4.2 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 (  6489 PWs)   bands (ev):
+
+   -21.3322  -9.6698  -5.0497  -5.0497   1.3576   2.3713   2.6748   4.5824
+
+          k = 0.0000 0.0962 0.0000 (  6493 PWs)   bands (ev):
+
+   -21.1692  -9.4730  -5.6851  -5.3885   1.5796   2.5960   2.9020   4.8048
+
+          k = 0.0000 0.1925 0.0000 (  6481 PWs)   bands (ev):
+
+   -20.6816  -8.8880  -7.2920  -6.1813   2.2454   3.2679   3.5835   5.4689
+
+          k = 0.0000 0.2887 0.0000 (  6429 PWs)   bands (ev):
+
+   -19.8752  -9.3612  -7.9337  -7.0610   3.3525   4.3581   4.7185   5.2202
+
+          k = 0.0000 0.3849 0.0000 (  6414 PWs)   bands (ev):
+
+   -18.7611 -11.5423  -7.7942  -6.6597   2.8648   4.8865   5.7692   5.9688
+
+          k = 0.0000 0.4811 0.0000 (  6418 PWs)   bands (ev):
+
+   -17.3662 -13.6315  -8.2669  -5.2271   0.7243   5.5275   6.8875   7.9413
+
+          k = 0.0000-0.5774 0.0000 (  6386 PWs)   bands (ev):
+
+   -16.0564 -15.1807  -8.4292  -4.3714  -0.3832   5.4549   9.1938   9.2874
+
+          k = 0.0833 0.1443 0.0000 (  6473 PWs)   bands (ev):
+
+   -20.8438  -9.0821  -6.6953  -6.0667   2.0237   3.0445   3.3564   5.2492
+
+          k = 0.0833 0.2406 0.0000 (  6444 PWs)   bands (ev):
+
+   -20.1969  -8.3761  -8.3113  -7.0635   2.9112   3.9363   4.2656   6.0101
+
+          k = 0.0833 0.3368 0.0000 (  6420 PWs)   bands (ev):
+
+   -19.2366 -10.4259  -7.9463  -7.1908   3.8818   4.2372   5.2931   5.6269
+
+          k = 0.0833 0.4330 0.0000 (  6423 PWs)   bands (ev):
+
+   -17.9802 -12.5328  -8.5786  -5.8039   1.6802   5.9660   6.3681   7.0450
+
+          k = 0.0833 0.5292 0.0000 (  6418 PWs)   bands (ev):
+
+   -16.4903 -14.4788  -8.9057  -4.4824  -0.0977   6.1759   8.1726   9.1514
+
+          k = 0.1667 0.2887 0.0000 (  6421 PWs)   bands (ev):
+
+   -19.3961  -9.6744  -8.4290  -7.3705   4.0188   4.3393   5.0428   5.4026
+
+          k = 0.1667 0.3849 0.0000 (  6439 PWs)   bands (ev):
+
+   -18.2927 -11.3857  -9.4772  -6.1120   2.4005   5.5585   6.5594   6.9912
+
+          k = 0.1667 0.4811 0.0000 (  6433 PWs)   bands (ev):
+
+   -16.9177 -13.2936 -10.0430  -4.6767   0.4871   7.4988   8.0462   8.3641
+
+          k = 0.1667 0.5774 0.0000 (  6408 PWs)   bands (ev):
+
+   -15.6433 -14.7677 -10.2246  -3.7744  -0.5886   7.9471   9.4919   9.7333
+
+          k = 0.2500 0.4330 0.0000 (  6437 PWs)   bands (ev):
+
+   -17.0674 -12.3847 -10.9767  -4.7633   0.7959   7.2927   8.0473   8.8034
+
+          k = 0.2500 0.5292 0.0000 (  6421 PWs)   bands (ev):
+
+   -15.6372 -13.8154 -11.6739  -3.3699  -0.7230   8.6894   9.3548  10.1592
+
+          k = 0.3333 0.5774 0.0000 (  6408 PWs)   bands (ev):
+
+   -14.4099 -14.4099 -12.6231  -2.0134  -2.0134   8.3668  10.8616  10.8620
+
+     the Fermi energy is    -1.9755 ev
+
+!    total energy              =     -23.93037111 Ry
+     estimated scf accuracy    <          1.2E-10 Ry
+     smearing contrib. (-TS)   =      -0.00018232 Ry
+     internal energy E=F+TS    =     -23.93018878 Ry
+
+     The total energy is F=E-TS. E is the sum of the following terms:
+     one-electron contribution =    -157.40532219 Ry
+     hartree contribution      =      80.10078092 Ry
+     xc contribution           =      -8.25529463 Ry
+     ewald contribution        =      61.62964712 Ry
+
+     convergence has been achieved in   8 iterations
+
+     negative rho (up, down):  2.656E-05 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  1   force =     0.00000000    0.00000000    0.00000000
+
+     Total force =     0.000000     Total SCF correction =     0.000000
+
+
+     Computing stress (Cartesian axis) and pressure
+
+
+     negative rho (up, down):  2.656E-05 0.000E+00
+          total   stress  (Ry/bohr**3)                   (kbar)     P=      -13.86
+  -0.00014137  -0.00000000   0.00000000          -20.80       -0.00        0.00
+  -0.00000000  -0.00014137   0.00000000           -0.00      -20.80        0.00
+   0.00000000   0.00000000   0.00000011            0.00        0.00        0.02
+
+
+     BFGS Geometry Optimization
+     Energy error            =      0.0E+00 Ry
+     Gradient error          =      0.0E+00 Ry/Bohr
+     Cell gradient error     =      2.1E+01 kbar
+
+     number of scf cycles    =   1
+     number of bfgs steps    =   0
+
+     enthalpy           new  =     -23.9303711077 Ry
+
+     new trust radius        =       0.0163061241 bohr
+     new conv_thr            =       0.0000000010 Ry
+
+     new unit-cell volume =    528.43483 a.u.^3 (    78.30596 Ang^3 )
+     density =      0.50939 g/cm^3
+
+CELL_PARAMETERS (alat=  4.65610675)
+   0.996465830  -0.000000000   0.000000000
+  -0.498232915   0.862964723   0.000000000
+   0.000000000   0.000000000   6.087895618
+
+ATOMIC_POSITIONS (crystal)
+C             0.3333333330        0.6666666660        0.5000000000
+C             0.6666666660        0.3333333330        0.5000000000
+
+
+
+     Writing config-only to output data dir ../tmp/gr.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     Check: negative core charge=   -0.000001
+
+     negative rho (up, down):  2.812E-05 0.000E+00
+     extrapolated charge    7.94315, renormalised to    8.00000
+
+     total cpu time spent up to now is        4.8 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     ethr =  1.00E-06,  avg # of iterations = 14.9
+
+     negative rho (up, down):  3.000E-05 0.000E+00
+
+     total cpu time spent up to now is        5.7 secs
+
+     total energy              =     -23.92939091 Ry
+     estimated scf accuracy    <       0.00073508 Ry
+
+     iteration #  2     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     ethr =  9.19E-06,  avg # of iterations = 12.7
+
+     negative rho (up, down):  2.902E-05 0.000E+00
+
+     total cpu time spent up to now is        6.4 secs
+
+     total energy              =     -23.93082343 Ry
+     estimated scf accuracy    <       0.00062434 Ry
+
+     iteration #  3     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  7.80E-06,  avg # of iterations =  1.1
+
+     negative rho (up, down):  2.911E-05 0.000E+00
+
+     total cpu time spent up to now is        6.7 secs
+
+     total energy              =     -23.93077101 Ry
+     estimated scf accuracy    <       0.00018420 Ry
+
+     iteration #  4     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.30E-06,  avg # of iterations =  2.6
+
+     negative rho (up, down):  2.884E-05 0.000E+00
+
+     total cpu time spent up to now is        7.0 secs
+
+     total energy              =     -23.93076619 Ry
+     estimated scf accuracy    <       0.00005002 Ry
+
+     iteration #  5     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.25E-07,  avg # of iterations =  2.6
+
+     negative rho (up, down):  2.863E-05 0.000E+00
+
+     total cpu time spent up to now is        7.3 secs
+
+     total energy              =     -23.93077502 Ry
+     estimated scf accuracy    <       0.00000685 Ry
+
+     iteration #  6     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  8.56E-08,  avg # of iterations =  3.9
+
+     negative rho (up, down):  2.863E-05 0.000E+00
+
+     total cpu time spent up to now is        7.6 secs
+
+     total energy              =     -23.93077773 Ry
+     estimated scf accuracy    <       0.00000139 Ry
+
+     iteration #  7     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.74E-08,  avg # of iterations =  4.3
+
+     negative rho (up, down):  2.869E-05 0.000E+00
+
+     total cpu time spent up to now is        8.0 secs
+
+     total energy              =     -23.93077929 Ry
+     estimated scf accuracy    <       0.00000038 Ry
+
+     iteration #  8     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.71E-09,  avg # of iterations =  3.5
+
+     negative rho (up, down):  2.841E-05 0.000E+00
+
+     total cpu time spent up to now is        8.3 secs
+
+     total energy              =     -23.93077842 Ry
+     estimated scf accuracy    <       0.00000259 Ry
+
+     iteration #  9     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.71E-09,  avg # of iterations =  4.1
+
+     negative rho (up, down):  2.823E-05 0.000E+00
+
+     total cpu time spent up to now is        8.7 secs
+
+     total energy              =     -23.93077874 Ry
+     estimated scf accuracy    <       0.00000230 Ry
+
+     iteration # 10     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.71E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.804E-05 0.000E+00
+
+     total cpu time spent up to now is        8.9 secs
+
+     total energy              =     -23.93077903 Ry
+     estimated scf accuracy    <       0.00000085 Ry
+
+     iteration # 11     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.71E-09,  avg # of iterations =  4.1
+
+     negative rho (up, down):  2.816E-05 0.000E+00
+
+     total cpu time spent up to now is        9.3 secs
+
+     total energy              =     -23.93077821 Ry
+     estimated scf accuracy    <       0.00000463 Ry
+
+     iteration # 12     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.71E-09,  avg # of iterations =  4.1
+
+     negative rho (up, down):  2.820E-05 0.000E+00
+
+     total cpu time spent up to now is        9.7 secs
+
+     total energy              =     -23.93077839 Ry
+     estimated scf accuracy    <       0.00000029 Ry
+
+     iteration # 13     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.59E-09,  avg # of iterations =  2.0
+
+     negative rho (up, down):  2.824E-05 0.000E+00
+
+     total cpu time spent up to now is       10.0 secs
+
+     total energy              =     -23.93077843 Ry
+     estimated scf accuracy    <       0.00000001 Ry
+
+     iteration # 14     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.51E-10,  avg # of iterations =  4.3
+
+     negative rho (up, down):  2.827E-05 0.000E+00
+
+     total cpu time spent up to now is       10.4 secs
+
+     total energy              =     -23.93077845 Ry
+     estimated scf accuracy    <          9.7E-09 Ry
+
+     iteration # 15     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.21E-10,  avg # of iterations =  4.1
+
+     negative rho (up, down):  2.826E-05 0.000E+00
+
+     total cpu time spent up to now is       10.8 secs
+
+     total energy              =     -23.93077845 Ry
+     estimated scf accuracy    <       0.00000002 Ry
+
+     iteration # 16     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.21E-10,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.819E-05 0.000E+00
+
+     total cpu time spent up to now is       11.0 secs
+
+     total energy              =     -23.93077846 Ry
+     estimated scf accuracy    <       0.00000001 Ry
+
+     iteration # 17     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.21E-10,  avg # of iterations =  4.1
+
+     negative rho (up, down):  2.821E-05 0.000E+00
+
+     total cpu time spent up to now is       11.4 secs
+
+     total energy              =     -23.93077845 Ry
+     estimated scf accuracy    <       0.00000007 Ry
+
+     iteration # 18     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.21E-10,  avg # of iterations =  2.6
+
+     negative rho (up, down):  2.824E-05 0.000E+00
+
+     total cpu time spent up to now is       11.7 secs
+
+     total energy              =     -23.93077844 Ry
+     estimated scf accuracy    <       0.00000002 Ry
+
+     iteration # 19     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.21E-10,  avg # of iterations =  3.9
+
+     negative rho (up, down):  2.824E-05 0.000E+00
+
+     total cpu time spent up to now is       12.0 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 (  6489 PWs)   bands (ev):
+
+   -21.3762  -9.7007  -5.0050  -5.0050   1.3676   2.3847   2.6917   4.5971
+
+          k = 0.0000 0.0966 0.0000 (  6493 PWs)   bands (ev):
+
+   -21.2121  -9.5022  -5.6431  -5.3476   1.5910   2.6110   2.9205   4.8214
+
+          k = 0.0000 0.1931 0.0000 (  6481 PWs)   bands (ev):
+
+   -20.7215  -8.9122  -7.2577  -6.1487   2.2614   3.2879   3.6070   5.4909
+
+          k = 0.0000 0.2897 0.0000 (  6429 PWs)   bands (ev):
+
+   -19.9100  -9.3383  -7.9494  -7.0371   3.3763   4.3881   4.7502   5.3286
+
+          k = 0.0000 0.3863 0.0000 (  6414 PWs)   bands (ev):
+
+   -18.7887 -11.5324  -7.7772  -6.6637   2.9477   4.9223   5.9070   6.0092
+
+          k = 0.0000 0.4828 0.0000 (  6418 PWs)   bands (ev):
+
+   -17.3836 -13.6356  -8.2542  -5.2168   0.7830   5.6715   6.9380   7.9973
+
+          k =-0.0000-0.5794 0.0000 (  6386 PWs)   bands (ev):
+
+   -16.0517 -15.2083  -8.4179  -4.3514  -0.3379   5.6014   9.2611   9.3532
+
+          k = 0.0836 0.1448 0.0000 (  6473 PWs)   bands (ev):
+
+   -20.8848  -9.1079  -6.6572  -6.0331   2.0382   3.0628   3.3783   5.2690
+
+          k = 0.0836 0.2414 0.0000 (  6444 PWs)   bands (ev):
+
+   -20.2338  -8.3462  -8.3303  -7.0393   2.9320   3.9613   4.2939   6.1060
+
+          k = 0.0836 0.3380 0.0000 (  6420 PWs)   bands (ev):
+
+   -19.2674 -10.4083  -7.9295  -7.1998   3.9773   4.2673   5.3296   5.6651
+
+          k = 0.0836 0.4345 0.0000 (  6423 PWs)   bands (ev):
+
+   -18.0024 -12.5286  -8.5668  -5.7997   1.7512   6.0146   6.5085   7.0926
+
+          k = 0.0836 0.5311 0.0000 (  6418 PWs)   bands (ev):
+
+   -16.4988 -14.4910  -8.8966  -4.4642  -0.0473   6.3248   8.2316   9.2182
+
+          k = 0.1673 0.2897 0.0000 (  6421 PWs)   bands (ev):
+
+   -19.4280  -9.6480  -8.4183  -7.3811   4.0474   4.4434   5.0760   5.4390
+
+          k = 0.1673 0.3863 0.0000 (  6439 PWs)   bands (ev):
+
+   -18.3173 -11.3701  -9.4732  -6.1110   2.4830   5.5981   6.6046   7.0393
+
+          k = 0.1673 0.4828 0.0000 (  6433 PWs)   bands (ev):
+
+   -16.9321 -13.2930 -10.0411  -4.6615   0.5482   7.5547   8.1998   8.4249
+
+          k = 0.1673 0.5794 0.0000 (  6408 PWs)   bands (ev):
+
+   -15.6374 -14.7890 -10.2235  -3.7492  -0.5402   8.1047   9.5662   9.8070
+
+          k = 0.2509 0.4345 0.0000 (  6437 PWs)   bands (ev):
+
+   -17.0834 -12.3681 -10.9894  -4.7493   0.8632   7.3450   8.1053   8.8648
+
+          k = 0.2509 0.5311 0.0000 (  6421 PWs)   bands (ev):
+
+   -15.6401 -13.8133 -11.6890  -3.3418  -0.6711   8.7522   9.4259  10.3192
+
+          k = 0.3345 0.5794 0.0000 (  6408 PWs)   bands (ev):
+
+   -14.4002 -14.4002 -12.6602  -1.9725  -1.9725   8.4236  10.9770  10.9771
+
+     the Fermi energy is    -1.9346 ev
+
+!    total energy              =     -23.93077845 Ry
+     estimated scf accuracy    <          1.2E-10 Ry
+     smearing contrib. (-TS)   =      -0.00018232 Ry
+     internal energy E=F+TS    =     -23.93059612 Ry
+
+     The total energy is F=E-TS. E is the sum of the following terms:
+     one-electron contribution =    -158.55200727 Ry
+     hartree contribution      =      80.68449840 Ry
+     xc contribution           =      -8.27146771 Ry
+     ewald contribution        =      62.20838046 Ry
+
+     convergence has been achieved in  19 iterations
+
+     negative rho (up, down):  2.824E-05 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  1   force =     0.00000000    0.00000000    0.00000000
+
+     Total force =     0.000000     Total SCF correction =     0.000000
+
+
+     Computing stress (Cartesian axis) and pressure
+
+
+     negative rho (up, down):  2.824E-05 0.000E+00
+          total   stress  (Ry/bohr**3)                   (kbar)     P=       -7.40
+  -0.00007522  -0.00000000   0.00000000          -11.07       -0.00        0.00
+  -0.00000000  -0.00007522   0.00000000           -0.00      -11.07        0.00
+  -0.00000000  -0.00000000  -0.00000055           -0.00       -0.00       -0.08
+
+     Energy error            =      4.1E-04 Ry
+     Gradient error          =      0.0E+00 Ry/Bohr
+     Cell gradient error     =      1.1E+01 kbar
+
+     number of scf cycles    =   2
+     number of bfgs steps    =   1
+
+     enthalpy           old  =     -23.9303711077 Ry
+     enthalpy           new  =     -23.9307784487 Ry
+
+     CASE: enthalpy          _new < enthalpy          _old
+
+     new trust radius        =       0.0179367365 bohr
+     new conv_thr            =            1.0E-11 Ry
+
+     new unit-cell volume =    524.31963 a.u.^3 (    77.69615 Ang^3 )
+     density =      0.51339 g/cm^3
+
+CELL_PARAMETERS (alat=  4.65610675)
+   0.992578243  -0.000000000   0.000000000
+  -0.496289121   0.859597974   0.000000000
+   0.000000000   0.000000000   6.087895618
+
+ATOMIC_POSITIONS (crystal)
+C             0.3333333330        0.6666666660        0.5000000000
+C             0.6666666660        0.3333333330        0.5000000000
+
+
+
+     Writing config-only to output data dir ../tmp/gr.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  3.008E-05 0.000E+00
+     extrapolated charge    7.93721, renormalised to    8.00000
+
+     total cpu time spent up to now is       12.6 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     ethr =  1.00E-06,  avg # of iterations = 14.4
+
+     negative rho (up, down):  3.203E-05 0.000E+00
+
+     total cpu time spent up to now is       13.6 secs
+
+     total energy              =     -23.92922179 Ry
+     estimated scf accuracy    <       0.00090690 Ry
+
+     iteration #  2     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     ethr =  1.13E-05,  avg # of iterations = 12.3
+
+     negative rho (up, down):  3.090E-05 0.000E+00
+
+     total cpu time spent up to now is       14.3 secs
+
+     total energy              =     -23.93098515 Ry
+     estimated scf accuracy    <       0.00076627 Ry
+
+     iteration #  3     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  9.58E-06,  avg # of iterations =  1.3
+
+     negative rho (up, down):  3.082E-05 0.000E+00
+
+     total cpu time spent up to now is       14.5 secs
+
+     total energy              =     -23.93092323 Ry
+     estimated scf accuracy    <       0.00022671 Ry
+
+     iteration #  4     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.83E-06,  avg # of iterations =  2.6
+
+     negative rho (up, down):  3.061E-05 0.000E+00
+
+     total cpu time spent up to now is       14.8 secs
+
+     total energy              =     -23.93092321 Ry
+     estimated scf accuracy    <       0.00006014 Ry
+
+     iteration #  5     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  7.52E-07,  avg # of iterations =  3.0
+
+     negative rho (up, down):  3.032E-05 0.000E+00
+
+     total cpu time spent up to now is       15.1 secs
+
+     total energy              =     -23.93092444 Ry
+     estimated scf accuracy    <       0.00001548 Ry
+
+     iteration #  6     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.94E-07,  avg # of iterations =  3.4
+
+     negative rho (up, down):  3.025E-05 0.000E+00
+
+     total cpu time spent up to now is       15.4 secs
+
+     total energy              =     -23.93092938 Ry
+     estimated scf accuracy    <       0.00000083 Ry
+
+     iteration #  7     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.04E-08,  avg # of iterations =  4.3
+
+     negative rho (up, down):  3.003E-05 0.000E+00
+
+     total cpu time spent up to now is       15.8 secs
+
+     total energy              =     -23.93093080 Ry
+     estimated scf accuracy    <       0.00000029 Ry
+
+     iteration #  8     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.65E-09,  avg # of iterations =  1.6
+
+     negative rho (up, down):  2.992E-05 0.000E+00
+
+     total cpu time spent up to now is       16.1 secs
+
+     total energy              =     -23.93093055 Ry
+     estimated scf accuracy    <       0.00000108 Ry
+
+     iteration #  9     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.65E-09,  avg # of iterations =  3.8
+
+     negative rho (up, down):  2.992E-05 0.000E+00
+
+     total cpu time spent up to now is       16.4 secs
+
+     total energy              =     -23.93093077 Ry
+     estimated scf accuracy    <       0.00000039 Ry
+
+     iteration # 10     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.65E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.993E-05 0.000E+00
+
+     total cpu time spent up to now is       16.7 secs
+
+     total energy              =     -23.93093069 Ry
+     estimated scf accuracy    <       0.00000053 Ry
+
+     iteration # 11     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.65E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.992E-05 0.000E+00
+
+     total cpu time spent up to now is       16.9 secs
+
+     total energy              =     -23.93093070 Ry
+     estimated scf accuracy    <       0.00000037 Ry
+
+     iteration # 12     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.65E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.998E-05 0.000E+00
+
+     total cpu time spent up to now is       17.2 secs
+
+     total energy              =     -23.93093048 Ry
+     estimated scf accuracy    <       0.00000039 Ry
+
+     iteration # 13     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.65E-09,  avg # of iterations =  1.2
+
+     negative rho (up, down):  2.998E-05 0.000E+00
+
+     total cpu time spent up to now is       17.4 secs
+
+     total energy              =     -23.93093051 Ry
+     estimated scf accuracy    <       0.00000001 Ry
+
+     iteration # 14     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.83E-10,  avg # of iterations =  4.1
+
+     negative rho (up, down):  2.996E-05 0.000E+00
+
+     total cpu time spent up to now is       17.8 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          1.9E-09 Ry
+
+     iteration # 15     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.37E-11,  avg # of iterations =  1.8
+
+     negative rho (up, down):  2.996E-05 0.000E+00
+
+     total cpu time spent up to now is       18.1 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          1.8E-09 Ry
+
+     iteration # 16     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.24E-11,  avg # of iterations =  2.3
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       18.4 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          3.4E-09 Ry
+
+     iteration # 17     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.24E-11,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       18.6 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          3.1E-09 Ry
+
+     iteration # 18     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.24E-11,  avg # of iterations =  1.5
+
+     negative rho (up, down):  2.994E-05 0.000E+00
+
+     total cpu time spent up to now is       18.9 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          5.2E-09 Ry
+
+     iteration # 19     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.24E-11,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.994E-05 0.000E+00
+
+     total cpu time spent up to now is       19.1 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          2.0E-09 Ry
+
+     iteration # 20     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.24E-11,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       19.4 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          2.2E-09 Ry
+
+     iteration # 21     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.24E-11,  avg # of iterations =  3.1
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       19.7 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          4.9E-11 Ry
+
+     iteration # 22     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.17E-13,  avg # of iterations =  4.5
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       20.1 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          3.6E-10 Ry
+
+     iteration # 23     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.17E-13,  avg # of iterations =  4.1
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       20.5 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 (  6489 PWs)   bands (ev):
+
+   -21.4243  -9.7348  -4.9545  -4.9545   1.3783   2.3993   2.7099   4.6132
+
+          k = 0.0000 0.0969 0.0000 (  6493 PWs)   bands (ev):
+
+   -21.2591  -9.5345  -5.5956  -5.3012   1.6035   2.6274   2.9405   4.8395
+
+          k = 0.0000 0.1939 0.0000 (  6481 PWs)   bands (ev):
+
+   -20.7652  -8.9388  -7.2189  -6.1117   2.2790   3.3098   3.6324   5.5147
+
+          k = 0.0000 0.2908 0.0000 (  6429 PWs)   bands (ev):
+
+   -19.9481  -9.3121  -7.9666  -7.0098   3.4025   4.4211   4.7847   5.4494
+
+          k = 0.0000 0.3878 0.0000 (  6414 PWs)   bands (ev):
+
+   -18.8188 -11.5206  -7.7575  -6.6678   3.0400   4.9616   6.0543   6.0590
+
+          k = 0.0000 0.4847 0.0000 (  6418 PWs)   bands (ev):
+
+   -17.4024 -13.6395  -8.2393  -5.2051   0.8484   5.8316   6.9944   8.0592
+
+          k =-0.0000-0.5817 0.0000 (  6386 PWs)   bands (ev):
+
+   -16.0456 -15.2385  -8.4047  -4.3288  -0.2874   5.7647   9.3359   9.4268
+
+          k = 0.0840 0.1454 0.0000 (  6473 PWs)   bands (ev):
+
+   -20.9295  -9.1364  -6.6141  -5.9949   2.0541   3.0828   3.4019   5.2908
+
+          k = 0.0840 0.2424 0.0000 (  6444 PWs)   bands (ev):
+
+   -20.2741  -8.3513  -8.3124  -7.0116   2.9548   3.9888   4.3248   6.1562
+
+          k = 0.0840 0.3393 0.0000 (  6420 PWs)   bands (ev):
+
+   -19.3010 -10.3880  -7.9099  -7.2095   4.0836   4.3005   5.3700   5.7071
+
+          k = 0.0840 0.4363 0.0000 (  6423 PWs)   bands (ev):
+
+   -18.0266 -12.5233  -8.5529  -5.7948   1.8303   6.0661   6.6670   7.1468
+
+          k = 0.0840 0.5332 0.0000 (  6418 PWs)   bands (ev):
+
+   -16.5079 -14.5038  -8.8856  -4.4437   0.0088   6.4907   8.2972   9.2926
+
+          k = 0.1679 0.2908 0.0000 (  6421 PWs)   bands (ev):
+
+   -19.4627  -9.6179  -8.4056  -7.3927   4.0789   4.5594   5.1127   5.4790
+
+          k = 0.1679 0.3878 0.0000 (  6439 PWs)   bands (ev):
+
+   -18.3440 -11.3521  -9.4680  -6.1096   2.5750   5.6419   6.6544   7.0922
+
+          k = 0.1679 0.4847 0.0000 (  6433 PWs)   bands (ev):
+
+   -16.9476 -13.2916 -10.0382  -4.6443   0.6164   7.6161   8.3712   8.4926
+
+          k = 0.1679 0.5817 0.0000 (  6408 PWs)   bands (ev):
+
+   -15.6300 -14.8124 -10.2214  -3.7208  -0.4862   8.2800   9.6501   9.8889
+
+          k = 0.2519 0.4363 0.0000 (  6437 PWs)   bands (ev):
+
+   -17.1005 -12.3490 -11.0027  -4.7336   0.9383   7.4031   8.1697   8.9325
+
+          k = 0.2519 0.5332 0.0000 (  6421 PWs)   bands (ev):
+
+   -15.6429 -13.8106 -11.7047  -3.3103  -0.6132   8.8222   9.5044  10.4966
+
+          k = 0.3358 0.5817 0.0000 (  6408 PWs)   bands (ev):
+
+   -14.3885 -14.3885 -12.7010  -1.9267  -1.9267   8.4868  11.1034  11.1034
+
+     the Fermi energy is    -1.8888 ev
+
+!    total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          1.2E-13 Ry
+     smearing contrib. (-TS)   =      -0.00018232 Ry
+     internal energy E=F+TS    =     -23.93074821 Ry
+
+     The total energy is F=E-TS. E is the sum of the following terms:
+     one-electron contribution =    -159.82857033 Ry
+     hartree contribution      =      81.33457414 Ry
+     xc contribution           =      -8.28947306 Ry
+     ewald contribution        =      62.85272104 Ry
+
+     convergence has been achieved in  23 iterations
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  1   force =     0.00000000    0.00000000    0.00000000
+
+     Total force =     0.000000     Total SCF correction =     0.000000
+
+
+     Computing stress (Cartesian axis) and pressure
+
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+          total   stress  (Ry/bohr**3)                   (kbar)     P=        0.00
+   0.00000022   0.00000000   0.00000000            0.03        0.00        0.00
+   0.00000000   0.00000022   0.00000000            0.00        0.03        0.00
+   0.00000000   0.00000000  -0.00000040            0.00        0.00       -0.06
+
+     Energy error            =      1.5E-04 Ry
+     Gradient error          =      0.0E+00 Ry/Bohr
+     Cell gradient error     =      3.2E-02 kbar
+
+     number of scf cycles    =   3
+     number of bfgs steps    =   2
+
+     enthalpy           old  =     -23.9307784487 Ry
+     enthalpy           new  =     -23.9309305315 Ry
+
+     CASE: enthalpy          _new < enthalpy          _old
+
+     small trust_radius: resetting bfgs history
+
+     new trust radius        =       0.0000252913 bohr
+     new conv_thr            =            1.0E-11 Ry
+
+     new unit-cell volume =    524.32542 a.u.^3 (    77.69701 Ang^3 )
+     density =      0.51338 g/cm^3
+
+CELL_PARAMETERS (alat=  4.65610675)
+   0.992583725  -0.000000000   0.000000000
+  -0.496291862   0.859602721   0.000000000
+   0.000000000   0.000000000   6.087895618
+
+ATOMIC_POSITIONS (crystal)
+C             0.3333333330        0.6666666660        0.5000000000
+C             0.6666666660        0.3333333330        0.5000000000
+
+
+
+     Writing config-only to output data dir ../tmp/gr.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+     extrapolated charge    8.00009, renormalised to    8.00000
+
+     total cpu time spent up to now is       21.0 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  2.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  1.41E-11,  avg # of iterations =  3.8
+
+     negative rho (up, down):  2.994E-05 0.000E+00
+
+     total cpu time spent up to now is       21.7 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          1.9E-09 Ry
+
+     iteration #  2     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.36E-11,  avg # of iterations =  4.0
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       22.0 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          1.8E-09 Ry
+
+     iteration #  3     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.28E-11,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       22.3 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          5.4E-10 Ry
+
+     iteration #  4     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.70E-12,  avg # of iterations =  2.3
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       22.6 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          1.4E-10 Ry
+
+     iteration #  5     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.76E-12,  avg # of iterations =  4.0
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       22.9 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          3.7E-11 Ry
+
+     iteration #  6     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.61E-13,  avg # of iterations =  1.8
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       23.2 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          5.2E-11 Ry
+
+     iteration #  7     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.61E-13,  avg # of iterations =  1.0
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       23.5 secs
+
+     total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          4.7E-11 Ry
+
+     iteration #  8     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.61E-13,  avg # of iterations =  2.8
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     total cpu time spent up to now is       23.8 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 (  6489 PWs)   bands (ev):
+
+   -21.4243  -9.7348  -4.9546  -4.9546   1.3783   2.3992   2.7099   4.6132
+
+          k = 0.0000 0.0969 0.0000 (  6493 PWs)   bands (ev):
+
+   -21.2591  -9.5345  -5.5957  -5.3013   1.6035   2.6274   2.9405   4.8395
+
+          k = 0.0000 0.1939 0.0000 (  6481 PWs)   bands (ev):
+
+   -20.7652  -8.9387  -7.2190  -6.1118   2.2790   3.3098   3.6324   5.5146
+
+          k = 0.0000 0.2908 0.0000 (  6429 PWs)   bands (ev):
+
+   -19.9481  -9.3122  -7.9666  -7.0098   3.4025   4.4210   4.7847   5.4493
+
+          k = 0.0000 0.3878 0.0000 (  6414 PWs)   bands (ev):
+
+   -18.8188 -11.5206  -7.7576  -6.6679   3.0399   4.9615   6.0543   6.0588
+
+          k = 0.0000 0.4847 0.0000 (  6418 PWs)   bands (ev):
+
+   -17.4024 -13.6395  -8.2394  -5.2052   0.8482   5.8314   6.9943   8.0591
+
+          k =-0.0000-0.5817 0.0000 (  6386 PWs)   bands (ev):
+
+   -16.0456 -15.2385  -8.4047  -4.3288  -0.2875   5.7644   9.3358   9.4267
+
+          k = 0.0840 0.1454 0.0000 (  6473 PWs)   bands (ev):
+
+   -20.9295  -9.1363  -6.6142  -5.9950   2.0541   3.0828   3.4019   5.2908
+
+          k = 0.0840 0.2424 0.0000 (  6444 PWs)   bands (ev):
+
+   -20.2741  -8.3512  -8.3125  -7.0117   2.9547   3.9887   4.3248   6.1560
+
+          k = 0.0840 0.3393 0.0000 (  6420 PWs)   bands (ev):
+
+   -19.3009 -10.3880  -7.9100  -7.2095   4.0834   4.3005   5.3699   5.7071
+
+          k = 0.0840 0.4362 0.0000 (  6423 PWs)   bands (ev):
+
+   -18.0266 -12.5233  -8.5529  -5.7948   1.8302   6.0660   6.6667   7.1467
+
+          k = 0.0840 0.5332 0.0000 (  6418 PWs)   bands (ev):
+
+   -16.5079 -14.5038  -8.8856  -4.4438   0.0087   6.4904   8.2971   9.2925
+
+          k = 0.1679 0.2908 0.0000 (  6421 PWs)   bands (ev):
+
+   -19.4627  -9.6180  -8.4056  -7.3927   4.0788   4.5592   5.1126   5.4789
+
+          k = 0.1679 0.3878 0.0000 (  6439 PWs)   bands (ev):
+
+   -18.3440 -11.3522  -9.4680  -6.1096   2.5748   5.6418   6.6544   7.0921
+
+          k = 0.1679 0.4847 0.0000 (  6433 PWs)   bands (ev):
+
+   -16.9476 -13.2916 -10.0382  -4.6444   0.6163   7.6160   8.3709   8.4925
+
+          k = 0.1679 0.5817 0.0000 (  6408 PWs)   bands (ev):
+
+   -15.6300 -14.8124 -10.2214  -3.7208  -0.4863   8.2797   9.6499   9.8888
+
+          k = 0.2519 0.4362 0.0000 (  6437 PWs)   bands (ev):
+
+   -17.1005 -12.3490 -11.0027  -4.7336   0.9382   7.4030   8.1696   8.9324
+
+          k = 0.2519 0.5332 0.0000 (  6421 PWs)   bands (ev):
+
+   -15.6429 -13.8106 -11.7047  -3.3104  -0.6133   8.8221   9.5043  10.4964
+
+          k = 0.3358 0.5817 0.0000 (  6408 PWs)   bands (ev):
+
+   -14.3885 -14.3885 -12.7009  -1.9268  -1.9268   8.4867  11.1032  11.1032
+
+     the Fermi energy is    -1.8888 ev
+
+!    total energy              =     -23.93093053 Ry
+     estimated scf accuracy    <          3.5E-12 Ry
+     smearing contrib. (-TS)   =      -0.00018232 Ry
+     internal energy E=F+TS    =     -23.93074821 Ry
+
+     The total energy is F=E-TS. E is the sum of the following terms:
+     one-electron contribution =    -159.82676041 Ry
+     hartree contribution      =      81.33365288 Ry
+     xc contribution           =      -8.28944742 Ry
+     ewald contribution        =      62.85180674 Ry
+
+     convergence has been achieved in   8 iterations
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  1   force =     0.00000000    0.00000000    0.00000000
+
+     Total force =     0.000000     Total SCF correction =     0.000000
+
+
+     Computing stress (Cartesian axis) and pressure
+
+
+     negative rho (up, down):  2.995E-05 0.000E+00
+          total   stress  (Ry/bohr**3)                   (kbar)     P=       -0.01
+   0.00000012   0.00000000  -0.00000000            0.02        0.00       -0.00
+   0.00000000   0.00000012  -0.00000000            0.00        0.02       -0.00
+   0.00000000   0.00000000  -0.00000040            0.00        0.00       -0.06
+
+     Energy error            =      9.6E-10 Ry
+     Gradient error          =      0.0E+00 Ry/Bohr
+     Cell gradient error     =      1.7E-02 kbar
+
+     bfgs converged in   4 scf cycles and   3 bfgs steps
+     (criteria: energy <  1.0E-05 Ry, force <  1.0E-04Ry/Bohr, cell <  5.0E-02kbar)
+
+     End of BFGS Geometry Optimization
+
+     Final enthalpy           =     -23.9309305325 Ry
+
+     File ../tmp/gr.bfgs deleted, as requested
+Begin final coordinates
+     new unit-cell volume =    524.32542 a.u.^3 (    77.69701 Ang^3 )
+     density =      0.51338 g/cm^3
+
+CELL_PARAMETERS (alat=  4.65610675)
+   0.992583725  -0.000000000   0.000000000
+  -0.496291862   0.859602721   0.000000000
+   0.000000000   0.000000000   6.087895618
+
+ATOMIC_POSITIONS (crystal)
+C             0.3333333330        0.6666666660        0.5000000000
+C             0.6666666660        0.3333333330        0.5000000000
+End final coordinates
+
+
+
+     Writing config-only to output data dir ../tmp/gr.save/
+
+     Final scf calculation at the relaxed structure.
+     The G-vectors are recalculated for the final unit cell
+     Results may differ from those at the preceding step.
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         118     118     37                12650    12650    2121
+     Max         119     119     38                12663    12663    2126
+     Sum         475     475    151                50627    50627    8495
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       4.6561  a.u.
+     unit-cell volume          =     524.3254 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =         8.00
+     number of Kohn-Sham states=            8
+     kinetic-energy cutoff     =      80.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     scf convergence threshold =      1.0E-11
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     press convergence thresh. =      5.0E-02
+     Exchange-correlation= LDA
+                           (   1   1   0   0   0   0   0)
+
+     celldm(1)=   4.656107  celldm(2)=   0.000000  celldm(3)=   6.087896
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   0.992584  -0.000000   0.000000 )  
+               a(2) = (  -0.496292   0.859603   0.000000 )  
+               a(3) = (   0.000000   0.000000   6.087896 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.007472  0.581664  0.000000 )  
+               b(2) = (  0.000000  1.163328  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.164260 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ../pseudo/C.pz-n-rrkjus_psl.0.1.UPF
+     MD5 check sum: a3cecbabebb5b3a1aff122f23eb09bb0
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated using "atomic" code by A. Dal Corso  v.5.0.2 svn rev. 9415
+     Using radial grid of 1073 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+
+     24 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (  -0.0000000   0.5730685   3.0439478  )
+         2           C   tau(   2) = (   0.4962919   0.2865342   3.0439478  )
+
+     number of k points=    19  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0138889
+        k(    2) = (   0.0000000   0.0969440   0.0000000), wk =   0.0833333
+        k(    3) = (   0.0000000   0.1938880   0.0000000), wk =   0.0833333
+        k(    4) = (   0.0000000   0.2908320   0.0000000), wk =   0.0833333
+        k(    5) = (   0.0000000   0.3877760   0.0000000), wk =   0.0833333
+        k(    6) = (   0.0000000   0.4847200   0.0000000), wk =   0.0833333
+        k(    7) = (  -0.0000000  -0.5816641   0.0000000), wk =   0.0416667
+        k(    8) = (   0.0839560   0.1454160   0.0000000), wk =   0.0833333
+        k(    9) = (   0.0839560   0.2423600   0.0000000), wk =   0.1666667
+        k(   10) = (   0.0839560   0.3393040   0.0000000), wk =   0.1666667
+        k(   11) = (   0.0839560   0.4362480   0.0000000), wk =   0.1666667
+        k(   12) = (   0.0839560   0.5331920   0.0000000), wk =   0.1666667
+        k(   13) = (   0.1679119   0.2908320   0.0000000), wk =   0.0833333
+        k(   14) = (   0.1679119   0.3877760   0.0000000), wk =   0.1666667
+        k(   15) = (   0.1679119   0.4847200   0.0000000), wk =   0.1666667
+        k(   16) = (   0.1679119   0.5816641   0.0000000), wk =   0.0833333
+        k(   17) = (   0.2518679   0.4362480   0.0000000), wk =   0.0833333
+        k(   18) = (   0.2518679   0.5331920   0.0000000), wk =   0.1666667
+        k(   19) = (   0.3358239   0.5816641   0.0000000), wk =   0.0277778
+
+     Dense  grid:    50627 G-vectors     FFT dimensions: (  27,  27, 162)
+
+     Estimated max dynamical RAM per process >      22.14 MB
+
+     Estimated total dynamical RAM >      88.57 MB
+
+     Check: negative core charge=   -0.000001
+
+     Initial potential from superposition of free atoms
+
+     starting charge       7.9999, renormalised to       8.0000
+
+     negative rho (up, down):  5.355E-05 0.000E+00
+     Starting wfcs are    8 randomized atomic wfcs
+
+     total cpu time spent up to now is       24.5 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  5 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  5 eigenvalues not converged
+     c_bands:  4 eigenvalues not converged
+     c_bands:  4 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  5 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  5 eigenvalues not converged
+     ethr =  1.00E-06,  avg # of iterations = 33.7
+
+     negative rho (up, down):  8.063E-06 0.000E+00
+
+     total cpu time spent up to now is       27.0 secs
+
+     total energy              =     -23.89016352 Ry
+     estimated scf accuracy    <       0.22998792 Ry
+
+     iteration #  2     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.87E-03,  avg # of iterations =  2.3
+
+     negative rho (up, down):  5.008E-06 0.000E+00
+
+     total cpu time spent up to now is       27.3 secs
+
+     total energy              =     -23.91740217 Ry
+     estimated scf accuracy    <       0.00287948 Ry
+
+     iteration #  3     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     ethr =  3.60E-05,  avg # of iterations = 16.3
+
+     negative rho (up, down):  3.604E-05 0.000E+00
+
+     total cpu time spent up to now is       28.3 secs
+
+     total energy              =     -23.92988885 Ry
+     estimated scf accuracy    <       0.00417077 Ry
+
+     iteration #  4     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.60E-05,  avg # of iterations =  4.9
+
+     negative rho (up, down):  2.419E-05 0.000E+00
+
+     total cpu time spent up to now is       28.7 secs
+
+     total energy              =     -23.93070099 Ry
+     estimated scf accuracy    <       0.00139736 Ry
+
+     iteration #  5     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.75E-05,  avg # of iterations =  2.0
+
+     negative rho (up, down):  2.364E-05 0.000E+00
+
+     total cpu time spent up to now is       29.0 secs
+
+     total energy              =     -23.93083450 Ry
+     estimated scf accuracy    <       0.00003516 Ry
+
+     iteration #  6     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     ethr =  4.39E-07,  avg # of iterations =  8.0
+
+     negative rho (up, down):  2.515E-05 0.000E+00
+
+     total cpu time spent up to now is       29.5 secs
+
+     total energy              =     -23.93093020 Ry
+     estimated scf accuracy    <       0.00002966 Ry
+
+     iteration #  7     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.71E-07,  avg # of iterations =  1.5
+
+     negative rho (up, down):  2.777E-05 0.000E+00
+
+     total cpu time spent up to now is       29.8 secs
+
+     total energy              =     -23.93092439 Ry
+     estimated scf accuracy    <       0.00001072 Ry
+
+     iteration #  8     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.34E-07,  avg # of iterations =  2.2
+
+     negative rho (up, down):  2.775E-05 0.000E+00
+
+     total cpu time spent up to now is       30.1 secs
+
+     total energy              =     -23.93092835 Ry
+     estimated scf accuracy    <       0.00000023 Ry
+
+     iteration #  9     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.91E-09,  avg # of iterations =  4.7
+
+     negative rho (up, down):  2.772E-05 0.000E+00
+
+     total cpu time spent up to now is       30.5 secs
+
+     total energy              =     -23.93092873 Ry
+     estimated scf accuracy    <       0.00000030 Ry
+
+     iteration # 10     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.91E-09,  avg # of iterations =  1.5
+
+     negative rho (up, down):  2.776E-05 0.000E+00
+
+     total cpu time spent up to now is       30.8 secs
+
+     total energy              =     -23.93092876 Ry
+     estimated scf accuracy    <       0.00000002 Ry
+
+     iteration # 11     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.43E-10,  avg # of iterations =  4.2
+
+     negative rho (up, down):  2.773E-05 0.000E+00
+
+     total cpu time spent up to now is       31.2 secs
+
+     total energy              =     -23.93092878 Ry
+     estimated scf accuracy    <          2.8E-09 Ry
+
+     iteration # 12     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.45E-11,  avg # of iterations =  1.7
+
+     negative rho (up, down):  2.770E-05 0.000E+00
+
+     total cpu time spent up to now is       31.4 secs
+
+     total energy              =     -23.93092878 Ry
+     estimated scf accuracy    <          1.0E-09 Ry
+
+     iteration # 13     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.28E-11,  avg # of iterations =  2.6
+
+     negative rho (up, down):  2.770E-05 0.000E+00
+
+     total cpu time spent up to now is       31.7 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 (  6381 PWs)   bands (ev):
+
+   -21.4242  -9.7348  -4.9545  -4.9545   1.3765   2.3949   2.6981   4.6043
+
+          k = 0.0000 0.0969 0.0000 (  6405 PWs)   bands (ev):
+
+   -21.2590  -9.5344  -5.5956  -5.3013   1.6016   2.6231   2.9286   4.8304
+
+          k = 0.0000 0.1939 0.0000 (  6381 PWs)   bands (ev):
+
+   -20.7651  -8.9387  -7.2190  -6.1117   2.2772   3.3056   3.6207   5.5055
+
+          k = 0.0000 0.2908 0.0000 (  6329 PWs)   bands (ev):
+
+   -19.9480  -9.3121  -7.9666  -7.0098   3.4009   4.4172   4.7729   5.4488
+
+          k = 0.0000 0.3878 0.0000 (  6316 PWs)   bands (ev):
+
+   -18.8188 -11.5206  -7.7575  -6.6678   3.0399   4.9601   6.0518   6.0581
+
+          k = 0.0000 0.4847 0.0000 (  6314 PWs)   bands (ev):
+
+   -17.4024 -13.6395  -8.2393  -5.2052   0.8483   5.8314   6.9930   8.0557
+
+          k =-0.0000-0.5817 0.0000 (  6322 PWs)   bands (ev):
+
+   -16.0456 -15.2385  -8.4047  -4.3288  -0.2875   5.7645   9.3349   9.4256
+
+          k = 0.0840 0.1454 0.0000 (  6381 PWs)   bands (ev):
+
+   -20.9295  -9.1363  -6.6141  -5.9949   2.0523   3.0786   3.3900   5.2818
+
+          k = 0.0840 0.2424 0.0000 (  6357 PWs)   bands (ev):
+
+   -20.2740  -8.3512  -8.3124  -7.0116   2.9530   3.9846   4.3128   6.1486
+
+          k = 0.0840 0.3393 0.0000 (  6340 PWs)   bands (ev):
+
+   -19.3009 -10.3880  -7.9099  -7.2095   4.0834   4.2989   5.3660   5.6952
+
+          k = 0.0840 0.4362 0.0000 (  6325 PWs)   bands (ev):
+
+   -18.0266 -12.5233  -8.5529  -5.7948   1.8302   6.0648   6.6666   7.1432
+
+          k = 0.0840 0.5332 0.0000 (  6309 PWs)   bands (ev):
+
+   -16.5078 -14.5038  -8.8856  -4.4437   0.0087   6.4905   8.2960   9.2900
+
+          k = 0.1679 0.2908 0.0000 (  6343 PWs)   bands (ev):
+
+   -19.4626  -9.6179  -8.4056  -7.3927   4.0773   4.5593   5.1087   5.4669
+
+          k = 0.1679 0.3878 0.0000 (  6330 PWs)   bands (ev):
+
+   -18.3439 -11.3521  -9.4680  -6.1096   2.5749   5.6404   6.6509   7.0800
+
+          k = 0.1679 0.4847 0.0000 (  6320 PWs)   bands (ev):
+
+   -16.9476 -13.2915 -10.0382  -4.6444   0.6163   7.6148   8.3708   8.4903
+
+          k = 0.1679 0.5817 0.0000 (  6302 PWs)   bands (ev):
+
+   -15.6300 -14.8124 -10.2214  -3.7208  -0.4863   8.2798   9.6496   9.8882
+
+          k = 0.2519 0.4362 0.0000 (  6345 PWs)   bands (ev):
+
+   -17.1005 -12.3490 -11.0026  -4.7336   0.9382   7.4018   8.1677   8.9203
+
+          k = 0.2519 0.5332 0.0000 (  6325 PWs)   bands (ev):
+
+   -15.6429 -13.8106 -11.7047  -3.3104  -0.6133   8.8220   9.5035  10.4965
+
+          k = 0.3358 0.5817 0.0000 (  6324 PWs)   bands (ev):
+
+   -14.3885 -14.3885 -12.7009  -1.9267  -1.9267   8.4867  11.1031  11.1043
+
+     the Fermi energy is    -1.8888 ev
+
+!    total energy              =     -23.93092878 Ry
+     estimated scf accuracy    <          6.8E-12 Ry
+     smearing contrib. (-TS)   =      -0.00018232 Ry
+     internal energy E=F+TS    =     -23.93074645 Ry
+
+     The total energy is F=E-TS. E is the sum of the following terms:
+     one-electron contribution =    -159.82677249 Ry
+     hartree contribution      =      81.33366898 Ry
+     xc contribution           =      -8.28944968 Ry
+     ewald contribution        =      62.85180674 Ry
+
+     convergence has been achieved in  13 iterations
+
+     negative rho (up, down):  2.770E-05 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.00000000   -0.00000000    0.00000000
+     atom    2 type  1   force =     0.00000000    0.00000000    0.00000000
+
+     Total force =     0.000000     Total SCF correction =     0.000000
+
+
+     Computing stress (Cartesian axis) and pressure
+
+
+     negative rho (up, down):  2.770E-05 0.000E+00
+          total   stress  (Ry/bohr**3)                   (kbar)     P=       -0.01
+   0.00000011   0.00000000   0.00000000            0.02        0.00        0.00
+   0.00000000   0.00000011   0.00000000            0.00        0.02        0.00
+   0.00000000   0.00000000  -0.00000035            0.00        0.00       -0.05
+
+
+     Writing all to output data dir ../tmp/gr.save/
+ 
+     init_run     :      0.69s CPU      0.79s WALL (       2 calls)
+     electrons    :     24.68s CPU     28.81s WALL (       5 calls)
+     update_pot   :      0.54s CPU      0.54s WALL (       3 calls)
+     forces       :      0.58s CPU      0.60s WALL (       5 calls)
+     stress       :      1.27s CPU      1.28s WALL (       5 calls)
+
+     Called by init_run:
+     wfcinit      :      0.15s CPU      0.19s WALL (       2 calls)
+     potinit      :      0.09s CPU      0.09s WALL (       2 calls)
+     hinit0       :      0.27s CPU      0.33s WALL (       2 calls)
+
+     Called by electrons:
+     c_bands      :     21.08s CPU     24.68s WALL (      72 calls)
+     sum_band     :      3.17s CPU      3.67s WALL (      72 calls)
+     v_of_rho     :      0.07s CPU      0.08s WALL (      76 calls)
+     newd         :      0.26s CPU      0.27s WALL (      76 calls)
+     mix_rho      :      0.09s CPU      0.11s WALL (      72 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.31s CPU      0.36s WALL (    2964 calls)
+     init_us_2:cp :      0.31s CPU      0.36s WALL (    2964 calls)
+     cegterg      :     20.31s CPU     23.79s WALL (    1381 calls)
+
+     Called by *egterg:
+     cdiaghg      :      0.44s CPU      0.52s WALL (    7378 calls)
+     h_psi        :     17.62s CPU     20.65s WALL (    7505 calls)
+     s_psi        :      0.23s CPU      0.27s WALL (    7505 calls)
+     g_psi        :      0.08s CPU      0.10s WALL (    6086 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.47s CPU      0.57s WALL (    7505 calls)
+     vloc_psi     :     16.87s CPU     19.75s WALL (    7505 calls)
+     add_vuspsi   :      0.23s CPU      0.28s WALL (    7505 calls)
+
+     General routines
+     calbec       :      0.64s CPU      0.75s WALL (    9348 calls)
+     fft          :      0.14s CPU      0.22s WALL (     348 calls)
+     ffts         :      0.02s CPU      0.03s WALL (      72 calls)
+     fftw         :     18.44s CPU     21.57s WALL (   87480 calls)
+ 
+     Parallel routines
+ 
+     PWSCF        :     27.81s CPU     32.12s WALL
+
+ 
+   This run was terminated on:   0:35:48   1Feb2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

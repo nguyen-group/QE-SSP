@@ -1,0 +1,13 @@
+&INPUTPP
+outdir    = '../tmp/'
+prefix    = 'gr'
+plot_num  = 0
+/
+&PLOT
+iflag         = 3
+output_format = 6
+fileout       = 'gr_rho.cube'
+nx            = 64
+ny            = 64
+nz            = 12
+/

@@ -1,0 +1,4 @@
+&projwfc
+prefix  = 'gr'
+outdir  = '../tmp'
+/

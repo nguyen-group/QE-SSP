@@ -1,0 +1,84 @@
+
+     Program Q2R v.7.0 starts on  6Feb2022 at  6:58:43 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     4 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       4
+     21213 MiB available memory on the printing compute node when the environment starts
+ 
+
+     reading grid info from file gr.dyn0    
+  reading force constants from file gr.dyn1
+  Dielectric Tensor not found
+  nqs=            1
+ q=   0.00000000  0.00000000  0.00000000
+  reading force constants from file gr.dyn2
+  nqs=            6
+ q=   0.00000000  0.19245009  0.00000000
+ q=   0.00000000 -0.19245009  0.00000000
+ q=  -0.16666667  0.09622504  0.00000000
+ q=  -0.16666667 -0.09622504  0.00000000
+ q=   0.16666667 -0.09622504  0.00000000
+ q=   0.16666667  0.09622504  0.00000000
+  reading force constants from file gr.dyn3
+  nqs=            6
+ q=   0.00000000  0.38490018  0.00000000
+ q=   0.00000000 -0.38490018  0.00000000
+ q=  -0.33333333  0.19245009  0.00000000
+ q=  -0.33333333 -0.19245009  0.00000000
+ q=   0.33333333 -0.19245009  0.00000000
+ q=   0.33333333  0.19245009  0.00000000
+  reading force constants from file gr.dyn4
+  nqs=            3
+ q=   0.00000000 -0.57735027  0.00000000
+ q=  -0.50000000  0.28867514  0.00000000
+ q=   0.50000000  0.28867514  0.00000000
+  reading force constants from file gr.dyn5
+  nqs=            6
+ q=   0.16666667  0.28867514  0.00000000
+ q=   0.16666667 -0.28867514  0.00000000
+ q=  -0.16666667 -0.28867514  0.00000000
+ q=  -0.33333333  0.00000000  0.00000000
+ q=  -0.16666667  0.28867514  0.00000000
+ q=   0.33333333  0.00000000  0.00000000
+  reading force constants from file gr.dyn6
+  nqs=           12
+ q=   0.16666667  0.48112522  0.00000000
+ q=   0.33333333  0.38490018  0.00000000
+ q=   0.16666667 -0.48112522  0.00000000
+ q=  -0.16666667 -0.48112522  0.00000000
+ q=   0.33333333 -0.38490018  0.00000000
+ q=  -0.50000000 -0.09622504  0.00000000
+ q=  -0.50000000  0.09622504  0.00000000
+ q=  -0.33333333  0.38490018  0.00000000
+ q=   0.50000000  0.09622504  0.00000000
+ q=  -0.33333333 -0.38490018  0.00000000
+ q=   0.50000000 -0.09622504  0.00000000
+ q=  -0.16666667  0.48112522  0.00000000
+  reading force constants from file gr.dyn7
+  nqs=            2
+ q=   0.33333333  0.57735027  0.00000000
+ q=  -0.33333333  0.57735027  0.00000000
+
+      q-space grid ok, #points =   36
+
+      fft-check success (sum of imaginary terms < 10^-12)
+ 
+     Q2R          :      0.01s CPU      0.03s WALL
+
+ 
+   This run was terminated on:   6:58:43   6Feb2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

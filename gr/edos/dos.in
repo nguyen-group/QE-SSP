@@ -1,0 +1,5 @@
+&DOS
+outdir = '../tmp/'
+prefix = 'gr'
+fildos = 'gr.dos'
+/

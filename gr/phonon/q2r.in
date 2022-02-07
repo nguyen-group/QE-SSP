@@ -1,0 +1,5 @@
+&INPUT
+fildyn = 'gr.dyn'
+zasr   = 'crystal'
+flfrc  = 'gr.fc'
+/
