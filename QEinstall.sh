@@ -16,5 +16,6 @@ sudo apt install xcrysden gnuplot
 sudo apt install python3-dev python3-pip
 pip3 install numpy scipy sympy matplotlib jupyterlab
 
+# Completion message
 echo "Installation finished!"
 echo "Let's start our journey with QuantumESPRESSO!"
