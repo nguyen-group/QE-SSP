@@ -15,6 +15,8 @@ sudo apt -y install quantum-espresso wannier90
 sudo apt -y install xcrysden gnuplot
 sudo apt -y install python3-dev python3-pip
 pip3 install numpy scipy sympy matplotlib jupyterlab
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
 
 # Completion message
 echo "Installation finished!"
