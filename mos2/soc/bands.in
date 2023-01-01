@@ -1,0 +1,5 @@
+&BANDS
+ outdir  = '../tmp'
+ prefix  = 'mos2'
+ filband = 'mos2.bands'
+/

@@ -1,0 +1,33 @@
+&CONTROL
+calculation     = 'scf'
+pseudo_dir      = '../pseudo/'
+outdir          = '../tmp/'
+prefix          = 'mos2'
+/
+&SYSTEM
+ibrav           = 4
+a               = 3.1825188839
+c               = 20.0
+nat             = 3
+ntyp            = 2
+nbnd            = 30
+ecutwfc         = 60.0
+input_dft       = 'hse'
+exx_fraction    = 0.25
+nqx1            = 2
+nqx2            = 2
+nqx3            = 1
+/
+&ELECTRONS
+mixing_beta     = 0.7
+conv_thr        = 1.0d-6
+/
+ATOMIC_SPECIES
+Mo  95.94   Mo.pbe-spn-rrkjus_psl.1.0.0.UPF
+S   32.065  S.pbe-nl-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS (crystal)
+Mo   0.0000000000   0.0000000000   0.5000000000
+S    0.3333333333   0.6666666667   0.4217548051
+S    0.3333333333   0.6666666667   0.5782450789
+K_POINTS (automatic)
+6 6 1 0 0 0

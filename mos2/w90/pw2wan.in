@@ -1,0 +1,5 @@
+&INPUTPP
+outdir    = '../tmp/'
+prefix    = 'mos2_open'
+seedname  = 'mos2'
+/

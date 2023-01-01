@@ -1,0 +1,63 @@
+
+     Program epsilon v.6.7MaX starts on  1Jan2023 at 15:42:48 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     4 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       4
+
+
+     Reading input file...
+     Broadcasting variables...
+     Reading PW restart file...
+
+     Reading xml data from directory:
+
+     ../tmp/mos2.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         192     192     60                27798    27798    4858
+     Max         193     193     61                27823    27823    4879
+     Sum         769     769    241               111239   111239   19453
+
+
+
+     Fermi energy [eV] is: -1.67353
+     The system is a dielectric...
+     metallic system: redefining wmin =     0.000000
+
+     Performing jdos calculation...
+
+     Integration over JDOS gives:     0.138785663 instead of 1.0d0
+
+     Writing output on file...
+
+
+     jdos         :      0.70s CPU      0.70s WALL (       1 calls)
+
+
+     epsilon      :      1.30s CPU      1.31s WALL
+
+
+   This run was terminated on:  15:42:49   1Jan2023            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

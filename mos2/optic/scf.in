@@ -1,0 +1,27 @@
+&CONTROL
+calculation     = 'scf'
+pseudo_dir      = '../pseudo/'
+outdir          = '../tmp/'
+prefix          = 'mos2'
+/
+&SYSTEM
+ibrav           = 4
+a               = 3.1378055413
+c               = 20.0
+nat             = 3
+ntyp            = 2
+ecutwfc         = 80.0
+/
+&ELECTRONS
+mixing_beta     = 0.7
+conv_thr        = 1.0d-6
+/
+ATOMIC_SPECIES
+Mo  95.94   Mo.pz-hgh.UPF
+S   32.065  S.pz-hgh.UPF
+ATOMIC_POSITIONS (crystal)
+Mo  -0.0000000000  -0.0000000000   0.5000000000
+S    0.3333333333   0.6666666667   0.4218571774
+S    0.3333333333   0.6666666667   0.5781427066
+K_POINTS (automatic)
+6 6 1 0 0 0

@@ -1,0 +1,12 @@
+phonon calc.
+&INPUTPH
+outdir    = '../tmp/'
+prefix    = 'mos2'
+fildyn    = 'mos2.dmat'
+tr2_ph    = 1d-14
+epsil     = .true.
+lraman    = .true.
+trans     = .true.
+asr       = .true.
+/
+0.0 0.0 0.0

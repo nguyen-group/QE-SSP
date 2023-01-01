@@ -1,0 +1,4 @@
+&INPUT
+fildyn = 'mos2.dmat'
+asr    = 'crystal'
+/

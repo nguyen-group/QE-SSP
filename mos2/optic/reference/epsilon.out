@@ -1,0 +1,64 @@
+
+     Program epsilon v.6.7MaX starts on  1Jan2023 at 15:42:43 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     4 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       4
+
+
+     Reading input file...
+     Broadcasting variables...
+     Reading PW restart file...
+
+     Reading xml data from directory:
+
+     ../tmp/mos2.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         192     192     60                27798    27798    4858
+     Max         193     193     61                27823    27823    4879
+     Sum         769     769    241               111239   111239   19453
+
+
+
+     Fermi energy [eV] is: -1.67353
+     The system is a dielectric...
+     metallic system: redefining wmin =     0.000000
+
+     Performing eps calculation...
+
+     xx,yy,zz plasmon frequences [eV] are:     7.487603153    7.487603155    7.350569249
+
+     Writing output on file...
+
+
+     eps          :      3.54s CPU      3.93s WALL (       1 calls)
+     dipole_calc  :      3.06s CPU      3.45s WALL (     576 calls)
+
+
+     epsilon      :      4.15s CPU      4.56s WALL
+
+
+   This run was terminated on:  15:42:47   1Jan2023            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
