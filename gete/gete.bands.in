@@ -1,0 +1,5 @@
+&BANDS
+ outdir   = './out/'
+ prefix   = 'gete'
+ filband  = 'gete.bands'
+/
