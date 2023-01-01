@@ -1,0 +1,5 @@
+&BANDS
+ outdir  = '../tmp/'
+ prefix  = 'bi-gr'
+ filband = 'bi-gr.bands'
+/

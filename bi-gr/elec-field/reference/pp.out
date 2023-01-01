@@ -1,0 +1,100 @@
+
+     Program POST-PROC v.7.0 starts on  3Feb2022 at 10:46:39 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     4 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       4
+     234932 MiB available memory on the printing compute node when the environment starts
+ 
+
+     Reading xml data from directory:
+
+     ../tmp/bi-gr.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= VDW-DF2
+                           (   1   4  13   0   2   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         124     124     40                17474    17474    3314
+     Max         126     126     41                17490    17490    3331
+     Sum         499     499    163                69929    69929   13293
+ 
+     Using Slab Decomposition
+ 
+
+     Check: negative core charge=   -0.000001
+
+     negative rho (up, down):  3.033E-05 0.000E+00
+
+
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     %                                                                      %
+     % You are using vdW-DF, which was implemented by the Thonhauser group. %
+     % Please cite the following two papers that made this development      %
+     % possible and the two reviews that describe the various versions:     %
+     %                                                                      %
+     %   T. Thonhauser et al., PRL 115, 136402 (2015).                      %
+     %   T. Thonhauser et al., PRB 76, 125112 (2007).                       %
+     %   K. Berland et al., Rep. Prog. Phys. 78, 066501 (2015).             %
+     %   D.C. Langreth et al., J. Phys.: Condens. Matter 21, 084203 (2009). %
+     %                                                                      %
+     %                                                                      %
+     % If you are calculating the stress with vdW-DF, please also cite:     %
+     %                                                                      %
+     %   R. Sabatini et al., J. Phys.: Condens. Matter 24, 424209 (2012).   %
+     %                                                                      %
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+ 
+     Adding external electric field
+
+     Computed dipole along edir(3) : 
+        Dipole                0.1256 Ry au,          0.3192 Debye
+        Dipole field          0.0022 Ry au, 
+ 
+        E field amplitude [Ha a.u.]:  9.7235E-03
+        Potential amp.        0.5413 Ry
+        Total length         35.9048 bohr
+ 
+
+     Calling punch_plot, plot_num =  11
+ 
+     Adding external electric field
+
+     Computed dipole along edir(3) : 
+        Dipole                0.1256 Ry au,          0.3192 Debye
+        Dipole field          0.0022 Ry au, 
+ 
+        E field amplitude [Ha a.u.]:  9.7235E-03
+        Potential amp.        0.5413 Ry
+        Total length         35.9048 bohr
+ 
+     Writing data to file  bi-gr.dat
+     Message from routine chdens:
+     namelist plot not found or invalid, exiting
+ 
+     POST-PROC    :      9.19s CPU      9.33s WALL
+
+ 
+   This run was terminated on:  10:46:48   3Feb2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

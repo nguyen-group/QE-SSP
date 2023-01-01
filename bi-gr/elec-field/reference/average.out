@@ -1,0 +1,29 @@
+
+     Program AVERAGE v.7.0 starts on  3Feb2022 at 10:46:48 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     235024 MiB available memory on the printing compute node when the environment starts
+ 
+     Reading header from file  bi-gr.dat
+     Reading data from file  bi-gr.dat
+     Output written to file avg.dat
+ 
+     AVERAGE      :      0.04s CPU      0.08s WALL
+
+ 
+   This run was terminated on:  10:46:48   3Feb2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

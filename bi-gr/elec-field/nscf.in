@@ -1,0 +1,42 @@
+&CONTROL
+calculation   = 'bands'
+pseudo_dir    = '../pseudo/'
+outdir        = '../tmp/'
+prefix        = 'bi-gr'
+tefield       = .true.
+dipfield      = .true.
+/
+&SYSTEM
+ibrav         = 4
+a             = 2.4857910097
+c             = 20.0
+nat           = 4
+ntyp          = 1
+nbnd          = 30
+occupations   = 'smearing'
+smearing      = 'mv'
+degauss       = 0.02
+ecutwfc       = 80
+input_dft     = 'vdw-df2'
+edir          = 3
+emaxpos       = 0
+eopreg        = 0.05
+eamp          = 0.0097234527
+/
+&ELECTRONS
+mixing_beta   = 0.3
+conv_thr      = 1.0D-9
+/
+ATOMIC_SPECIES
+C 12.0107 C.pbe-n-rrkjus_psl.0.1.UPF
+ATOMIC_POSITIONS (crystal)
+C   0.0000000000   0.0000000000   0.4115083725
+C   0.3333333333   0.6666666667   0.4114773543
+C   0.0000000000   0.0000000000   0.5884916275
+C   0.6666666667   0.3333333333   0.5885226457
+K_POINTS (crystal_b)
+4
+gG  40
+K   20
+M   30
+gG  0

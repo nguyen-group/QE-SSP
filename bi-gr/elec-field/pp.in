@@ -1,0 +1,6 @@
+&INPUTPP
+outdir   = '../tmp/'
+prefix   = 'bi-gr'
+filplot  = 'bi-gr.dat'
+plot_num = 11
+/
