@@ -10,6 +10,8 @@ eBook ISBN:  9781003290964
 
 Paperback ISBN: 9789814968379
 
+![book-dft-cover (1)](https://github.com/nguyen-group/QE-SSP/assets/46996256/c8a678f0-2bee-4757-89c5-d3c4c2a072c8)
+
 # Contributors
 - Nguyen Tuan Hung
 - Ahmad Ridwan Tresna Nugraha
