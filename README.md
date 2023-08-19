@@ -6,9 +6,7 @@ N. T. Hung, A. R. T. Nugraha and R. Saito, **Quantum ESPRESSO Course for Solidâ€
 
 DOI:  https://doi.org/10.1201/9781003290964
 
-eBook ISBN:  9781003290964
-
-Paperback ISBN: 9789814968379
+ISBN:  9781003290964 (eBook) & 9789814968379 (Paperback)
 
 ![book-dft-cover (1)](https://github.com/nguyen-group/QE-SSP/assets/46996256/c8a678f0-2bee-4757-89c5-d3c4c2a072c8)
 
