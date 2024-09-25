@@ -43,7 +43,7 @@ def convert_cif_to_qe_input(cif_file, output_dir):
     reciprocal_lattice = 2 * np.pi * np.linalg.inv(cell)
 
     # Get k-point grid
-    k_density = 0.3 # k-point density in Angstrom^-1 for structure with 1, 2, 3 atoms
+    k_density = 0.3 # k-point density in Angstrom^-1
     reciprocal_lengths = np.linalg.norm(reciprocal_lattice, axis=1)
     kpoints = np.ceil(reciprocal_lengths / k_density).astype(int)
 
@@ -150,8 +150,6 @@ def convert_cif_to_qe_input(cif_file, output_dir):
     return output_file
 
 # Directory paths
-#cif_files_dir = './cif_files_small'
-#output_dir = './qe_inputs-sssp-1.3'
 cif_files_dir = './cif_files'
 output_dir = './vc-relax'
 
