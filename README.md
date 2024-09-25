@@ -46,6 +46,7 @@ QE-SSP
 ├── gete: Quantum ESPRESSO input generators for an example GeTe (Sec. 6.1)
 ├── scripts: Shell scripts and batch jobs (Sec. 6.3)
 └── matplotlib: Creating and using your Matplotlib style (Sec. 6.4.5)
+└── cif2vc-relax: Python file for convent CIF file to QE input file for vc-relax
 ```
 # Book Discussions
 Thank you for using our book, and don't hesitate to contact us using the GitHub discussions page: [https://github.com/nguyen-group/QERaman/discussions](https://github.com/nguyen-group/QE-SSP/discussions) to ask any questions about the contents of the book, such as difficulty in installation, etc. The erratum of books is also updated on the discussions page.

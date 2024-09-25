@@ -2,7 +2,7 @@
 figure.figsize     : 6.5, 5
 
 # Font properties
-font.family        : Arial
+# font.family        : Arial
 font.size          : 22
 
 #### LaTeX
