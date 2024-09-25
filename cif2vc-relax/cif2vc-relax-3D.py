@@ -61,7 +61,10 @@ def convert_cif_to_qe_input(cif_file, output_dir):
     max_ecutrho = max([pseudopotential_data[symbol]['ecutrho'] for symbol in symbols])
     
     # Generate the QE input using cif2cell
-    output_file = os.path.join(output_dir, os.path.splitext(os.path.basename(cif_file))[0] + '.in')
+    # with name same as the CIF file
+    # output_file = os.path.join(output_dir, os.path.splitext(os.path.basename(cif_file))[0] + '.in')
+    # with name is vc-relax.in
+    output_file = os.path.join(output_dir, 'vc-relax.in')
 
     # Define the command with the --force flag
     cif2cell_cmd = [
@@ -142,7 +145,7 @@ def convert_cif_to_qe_input(cif_file, output_dir):
         
         # Add information to the K_POINTS section
         f.write("K_POINTS {automatic}\n")
-        f.write(f" {kpoints[0]} {kpoints[1]} 1 0 0 0\n")
+        f.write(f" {kpoints[0]} {kpoints[1]} {kpoints[2]} 0 0 0\n")
 
     return output_file
 
