@@ -38,8 +38,12 @@ else
     exit 1
 fi
 
-echo "localhost slots=4" > hosts
-
 python3 -m pip install matplotlib
 
 echo "Finished installing Matplotlib"
+
+# Source the updated .bashrc to apply the changes to the current session
+source ~/.bashrc
+
+# Remove the .git directory if it exists to avoid any potential issues with version control or accidental commits.
+rm -rf .git/
