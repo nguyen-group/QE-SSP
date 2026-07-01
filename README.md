@@ -51,6 +51,9 @@ QE-SSP
 # Book Discussions
 Thank you for using our book, and don't hesitate to contact us using the GitHub discussions page: [https://github.com/nguyen-group/QERaman/discussions](https://github.com/nguyen-group/QE-SSP/discussions) to ask any questions about the contents of the book, such as difficulty in installation, etc. The erratum of books is also updated on the discussions page.
 
+# Course Information
+An online course for this book is available at: [https://nguyen-group.github.io/courses/qe/](https://nguyen-group.github.io/courses/qe/). This course was used for teaching at National Taiwan University, National Taiwan Normal University, Vietnam National University - Ho Chi Minh, Tohoku University, etc.
+
 # Contributors
 - Nguyen Tuan Hung
 - Ahmad Ridwan Tresna Nugraha
